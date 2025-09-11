@@ -1,0 +1,811 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #141718;
+  color: white;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.navbar {
+  width: 100%;
+  height: 56px;
+  display: block;
+  background-color: #ffab00a3;
+}
+
+.navbar-style {
+  display: flex;
+  justify-content: space-around;
+}
+
+.elegant {
+  width: 105px;
+  height: 24px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.arrow-down {
+  width: 10px;
+  height: 10px;
+}
+
+.middle-section {
+  width: auto;
+  height: 24px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.middle-section a {
+  text-decoration: none;
+  color: #141718;
+}
+
+.shop-link {
+  color: goldenrod;
+  text-decoration-line: underline;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero {
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.hero-header {
+  width: 538px;
+  height: 252px;
+
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 80px;
+  line-height: 84px;
+  letter-spacing: -3px;
+  position: absolute;
+  top: 29%;
+  right: 15%;
+}
+
+.amazing {
+  color: dodgerblue;
+}
+
+.hero-p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  position: absolute;
+  right: 29%;
+  top: 60%;
+}
+
+.shopping-now {
+  width: 250px;
+  height: 56px;
+  padding-top: 12px;
+  padding-right: 56px;
+  padding-bottom: 12px;
+  padding-left: 56px;
+  gap: 8px;
+  opacity: 1;
+  border-radius: 8px;
+  position: absolute;
+  top: 65%;
+  right: 34%;
+  background-color: black;
+  color: white;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  text-align: center;
+}
+.shopping-now:hover {
+  opacity: 0.8;
+}
+
+.new-arrivals-section {
+  padding: 40px 0;
+}
+
+.head-phones {
+  display: flex;
+  gap: 65px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 150px;
+}
+.new-arrivals {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  padding-left: 150px;
+  margin-bottom: 32px;
+  margin-top: 30px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.product {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product p:not(.corner-new) {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: 800px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  width: 262px;
+  height: 52px;
+  margin-top: 12px;
+}
+
+.corner-new {
+  position: absolute;
+  font-family: "Inter";
+  top: 8px;
+  left: 15px;
+  padding: 4px 14px;
+  border-radius: 4px;
+  background-color: white;
+  font-family: Inter, sans-serif;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  line-height: 1;
+  z-index: 2;
+  width: auto;
+  height: auto;
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.image-button {
+  position: absolute;
+  padding: 8px 24px;
+  border-radius: 8px;
+  top: 287px;
+  left: 16px;
+  background-color: black;
+  color: white;
+  width: 230px;
+  height: 46px;
+}
+
+.image-button:hover {
+  opacity: 0.9;
+}
+
+.wishlist {
+  position: absolute;
+  box-shadow: 0px 8px 16px -8px #0f0f0f1f;
+  width: 33px;
+  height: 33px;
+  top: 2.5px;
+  left: 214px;
+  border-radius: 32px;
+  padding: 6px 6px;
+  gap: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.wishlist .heart-icon {
+  width: 30px;
+  height: 30px;
+  stroke: none;
+  transform: scale(1.7);
+  transform-origin: center;
+}
+
+.wishlist .heart-icon path {
+  transition: fill 0.3s;
+  fill: #6c7275;
+}
+
+.wishlist input[type="checkbox"] {
+  display: none;
+}
+
+.wishlist input[type="checkbox"]:checked + svg path {
+  fill: red;
+}
+
+.shop-collection {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px;
+  text-align: left;
+}
+
+.shop-collection h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 32px;
+  font-family: "Poppins";
+  padding-left: 70px;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 24px;
+  padding-left: 55px;
+  padding-right: 55px;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.banner-card {
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  height: 100%;
+  align-self: stretch;
+  position: relative;
+}
+
+.banner-card:hover {
+  transform: translateY(-5px);
+}
+
+.headband {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+}
+
+.earbuds {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.accessories {
+  grid-row: 2;
+  grid-column: 2;
+  margin-top: -29px;
+}
+
+.banner-card h3 {
+  font-size: 34px;
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.banner-card p {
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  font-family: "Inter";
+  color: black;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  gap: 12px;
+}
+
+.banner-card h3 {
+  position: absolute;
+  top: 201px;
+  left: 45px;
+}
+
+.banner-card p {
+  position: absolute;
+  left: 45px;
+  top: 250px;
+}
+
+.bs {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.4px;
+  padding-left: 150px;
+  padding-bottom: 50px;
+}
+
+.best-seller {
+  display: grid;
+  row-gap: 48px;
+}
+
+.bs-row {
+  padding-left: 150px;
+  width: 1370px;
+  margin-bottom: 100px;
+}
+
+.guy-glasses {
+  display: grid;
+  grid-template-columns: 720px 720px;
+  background-color: #ffab0066;
+  position: relative;
+}
+
+.gws {
+  height: 532px;
+  width: 720px;
+}
+
+.promotion {
+  width: 452px;
+  height: 16px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: #377dff;
+  position: absolute;
+  left: 790px;
+  bottom: 280px;
+  margin-bottom: 16px;
+}
+
+.hurry {
+  width: 452px;
+  height: 44px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  left: 790px;
+  bottom: 242px;
+  position: absolute;
+}
+
+.small-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  width: 452px;
+  height: 32px;
+  position: absolute;
+  left: 790px;
+  bottom: 202px;
+}
+
+.hurry-button {
+  width: 154px;
+  height: 40px;
+  gap: 8px;
+  padding-top: 6px;
+  padding-right: 40px;
+  padding-bottom: 6px;
+  padding-left: 40px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 790px;
+  bottom: 152px;
+}
+
+.hurry-button:hover {
+  opacity: 0.8;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 160px;
+  transition: transform 0.3s ease;
+}
+
+.te-co:hover {
+  transform: translateY(-5px);
+  border-style: dashed;
+  border-color: black;
+}
+
+.newsl img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer {
+  background-color: #141718;
+  color: white;
+  width: auto;
+  height: 300px;
+  padding-top: 80px;
+  padding-right: 160px;
+  padding-bottom: 32px;
+  padding-left: 160px;
+  gap: 49px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logo-mogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logo {
+  width: 105px;
+  height: 24px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+}
+
+.line {
+  width: 1px;
+  height: 24px;
+}
+
+.hs {
+  color: #e8ecef;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  margin: 8px 0 0;
+  justify-content: space-around;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 22px;
+  margin-right: 40px;
+}
+
+.footer-nav a {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  margin-right: 40px;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.footer-nav a:first-child {
+  margin-left: 0;
+}
+
+.bottom-bar {
+  width: 1118px;
+  height: 56px;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #6c7275;
+  margin-top: 50px;
+}
+
+.bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.legal a {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #fefefe;
+  text-decoration: none;
+  gap: 28px;
+  margin-left: 16px;
+}
+
+.social-icons {
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons img {
+  margin-left: 16px;
+}
+
+/* Tablet */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .hero-header {
+    font-size: 48px;
+    width: 80%;
+    right: 10%;
+    top: 20%;
+  }
+
+  .hero-p {
+    font-size: 16px;
+    right: 15%;
+    top: 50%;
+    position: static;
+  }
+
+  .shopping-now {
+    width: 200px;
+    right: 20%;
+    top: 55%;
+    font-size: 16px;
+  }
+
+  .head-phones {
+    padding-left: 50px;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .new-arrivals {
+    padding-left: 50px;
+    font-size: 32px;
+  }
+
+  .bs-row {
+    width: 100%;
+    padding-left: 50px;
+  }
+
+  .shop-collection {
+    padding: 24px;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 16px;
+  }
+
+  .banner-card h3,
+  .banner-card p {
+    position: static;
+    margin-top: 8px;
+    margin-left: 0;
+  }
+
+  .guy-glasses {
+    grid-template-columns: 1fr;
+  }
+
+  .gws {
+    width: 100%;
+    height: auto;
+  }
+
+  .promotion,
+  .hurry,
+  .small-text,
+  .hurry-button {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .terms {
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 40px 40px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-header {
+    font-size: 32px;
+    width: 90%;
+    right: 5%;
+    top: 15%;
+    line-height: 40px;
+  }
+
+  .hero-p {
+    font-size: 14px;
+    right: 10%;
+    top: 45%;
+  }
+
+  .shopping-now {
+    width: 150px;
+    right: 10%;
+    top: 50%;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .head-phones {
+    padding-left: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .new-arrivals {
+    padding-left: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .bs-row {
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 40px;
+  }
+
+  .shop-collection {
+    padding: 16px 10px;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 12px;
+  }
+
+  .banner-card h3,
+  .banner-card p {
+    position: static;
+    margin-top: 4px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .guy-glasses {
+    grid-template-columns: 1fr;
+    background-color: #ffab0066;
+  }
+
+  .gws {
+    width: 100%;
+    height: auto;
+  }
+
+  .promotion,
+  .hurry,
+  .small-text,
+  .hurry-button {
+    position: static;
+    margin: 8px auto;
+    text-align: center;
+  }
+
+  .terms {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .middle-section {
+    gap: 20px;
+  }
+
+  .navbar-style {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .elegant {
+    font-size: 20px;
+  }
+}
